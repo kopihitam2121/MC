@@ -1,0 +1,42 @@
+<?php
+declare(strict_types=1);
+
+return [
+    'rbac_enabled_default' => mc_env_bool('MC_RBAC_ENABLED', true),
+    'allow_excel_export_default' => true,
+    'allow_pdf_print_default' => true,
+    'dashboard_chart_default' => true,
+    'base_currency' => 'IDR',
+    'transaction_types' => ['BUY' => 'Beli Valas', 'SELL' => 'Jual Valas'],
+    'payment_methods' => ['Cash' => 'Tunai', 'Transfer' => 'Transfer', 'QRIS' => 'QRIS', 'Other' => 'Lainnya'],
+    'roles' => [
+        'admin' => 'Administrator',
+        'admin_money_changer' => 'Admin Money Changer',
+        'user_money_changer' => 'User Money Changer',
+        'supervisor' => 'Supervisor',
+        'pic' => 'PIC',
+        'kolektor' => 'Kolektor',
+        'teller' => 'Teller',
+    ],
+    'permissions' => [
+        'dashboard.view' => 'Melihat dashboard',
+        'transactions.view' => 'Melihat transaksi',
+        'transactions.create' => 'Input transaksi',
+        'transactions.update' => 'Mengubah transaksi',
+        'transactions.delete' => 'Menghapus transaksi',
+        'sheets.view' => 'Melihat tabel transaksi',
+        'reports.view' => 'Melihat laporan',
+        'exports.excel' => 'Ekspor Excel',
+        'exports.pdf' => 'Cetak / simpan PDF',
+        'users.manage' => 'Mengelola pengguna',
+        'profile.view' => 'Mengelola profil sendiri',
+        'settings.manage' => 'Mengubah pengaturan',
+        'currencies.manage' => 'Mengelola mata uang',
+        'customers.manage' => 'Mengelola master pelanggan',
+        'roles.manage' => 'Mengelola role dan izin',
+        'notifications.manage' => 'Mengelola pengumuman untuk pengguna',
+        'rates.view' => 'Melihat master kurs dan kurs referensi',
+        'vault.view' => 'Melihat saldo dan riwayat brankas',
+    ],
+    'sensitive_permissions' => ['users.manage', 'settings.manage', 'currencies.manage', 'customers.manage', 'roles.manage'],
+];

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17243b">
+  <title>Offline · Money Changer</title>
+  <link rel="icon" href="assets/icons/pwa-192.png" type="image/png">
+  <style>
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:22px;background:radial-gradient(ellipse at 15% 15%,#dff7ef,transparent 45%),radial-gradient(ellipse at 90% 90%,#e5ebff,transparent 44%),#f3f7fb;color:#17243b;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}.offline-card{width:min(440px,100%);padding:30px 25px;text-align:center;background:rgba(255,255,255,.92);border:1px solid #dfe7ef;border-radius:22px;box-shadow:0 22px 70px #17243b14}.offline-card img{width:76px;height:76px;object-fit:contain;margin-bottom:12px}.offline-card h1{font-size:23px;margin:0 0 10px}.offline-card p{font-size:14px;line-height:1.7;color:#687891;margin:0 0 20px}.offline-card button{min-height:44px;border:0;border-radius:10px;padding:0 20px;background:#16a58f;color:white;font-weight:750;font-size:13px;cursor:pointer}.offline-card small{display:block;margin-top:16px;color:#8a97aa;font-size:11px}
+  </style>
+</head>
+<body>
+  <main class="offline-card">
+    <img src="assets/icons/pwa-192.png" alt="Money Changer">
+    <h1>Anda sedang offline</h1>
+    <p>Koneksi internet atau jaringan server sedang tidak tersedia. Untuk menjaga keamanan, halaman transaksi tidak disimpan di perangkat. Sambungkan kembali ke jaringan, lalu coba buka aplikasi lagi.</p>
+    <button type="button" onclick="window.location.reload()">Coba lagi</button>
+    <small>Money Changer Transaction P2 · Data transaksi tetap berada di server.</small>
+  </main>
+</body>
+</html>
